@@ -11,6 +11,7 @@ The system is built on a Raspberry Pi–powered Yahboom 4WD smart car equipped w
 The project serves as a small-scale, low-cost experimental platform for studying autonomous navigation, reinforcement learning, and intelligent robotic systems.
 
 Key Features
+
 🚗 Autonomous navigation in controlled or dynamic environments
 
 🧠 Reinforcement learning–based decision making (Q-Learning, with potential extension to DQN)
@@ -42,6 +43,7 @@ The Raspberry Pi acts as the central controller, handling sensor input, learning
 System Architecture
 
 The robot follows a classical Perception → Decision → Control architecture:
+
 1. Perception
 
 Ultrasonic sensors measure distances to nearby obstacles
