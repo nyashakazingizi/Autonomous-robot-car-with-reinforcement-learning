@@ -64,6 +64,23 @@ architecture.
    - Selected actions are executed through motor commands
    - Continuous feedback ensures smooth and accurate movement
 
+PROJECT EVOLUTION
+-----------------
+This project was developed incrementally through multiple
+implementations to study autonomous navigation techniques:
+
+1. Rule-Based Obstacle Avoidance
+   - Hard-coded logic using sensor thresholds
+   - Fast but inflexible behavior
+
+2. Reinforcement Learning-Based Navigation
+   - Q-Learning agent learns actions through rewards and penalties
+   - Improved adaptability to dynamic environments
+
+3. Maze Navigation Environment
+   - More complex state space and decision-making
+   - Focus on pathfinding and long-term planning
+
 
 REINFORCEMENT LEARNING APPROACH
 -------------------------------
