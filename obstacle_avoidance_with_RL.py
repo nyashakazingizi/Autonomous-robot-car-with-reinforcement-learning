@@ -1,3 +1,16 @@
+"""
+Obstacle Avoidance using Reinforcement Learning (Q-Learning)
+-------------------------------------------------------------
+This script extends basic obstacle avoidance by introducing a
+reinforcement learning agent that learns optimal actions based
+on sensor feedback and reward signals.
+
+Key Concepts:
+- State-action representation
+- Reward shaping
+- Online learning through interaction
+"""
+
 import RPi.GPIO as GPIO
 import time
 import random
