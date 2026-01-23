@@ -1,3 +1,16 @@
+"""
+Maze Navigation with Reinforcement Learning
+-------------------------------------------
+This script focuses on autonomous navigation in a maze-like
+environment, requiring more complex decision-making and
+pathfinding behavior.
+
+This implementation demonstrates:
+- Sequential decision-making
+- Environment constraints
+- Improved policy learning over time
+"""
+
 import RPi.GPIO as GPIO
 import time
 
