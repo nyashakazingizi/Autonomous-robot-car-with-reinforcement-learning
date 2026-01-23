@@ -1,3 +1,16 @@
+"""
+Rule-Based Obstacle Avoidance
+-----------------------------
+This script implements a basic obstacle avoidance system using
+hard-coded rules based on ultrasonic sensor distance thresholds.
+
+Purpose:
+- Establish baseline autonomous navigation behavior
+- Serve as a comparison against learning-based approaches
+
+This version does not use machine learning.
+"""
+
 import RPi.GPIO as GPIO
 import time
 
