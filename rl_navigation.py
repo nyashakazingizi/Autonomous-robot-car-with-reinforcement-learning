@@ -18,7 +18,7 @@ import numpy as np
 
 # ================= RL PARAMETERS =================
 NUM_STATES = 4
-NUM_ACTIONS = 5
+NUM_ACTIONS = 4
 
 Q = np.zeros((NUM_STATES, NUM_ACTIONS))
 
@@ -167,8 +167,6 @@ def perform_action(action):
     elif action == 2:
         turn_right(30, 30)
     elif action == 3:
-        back(40, 40)
-    elif action == 4:
         stop()
 
     time.sleep(ACTION_DURATION)
@@ -183,10 +181,14 @@ while True:
     # ---- HARD SAFETY LAYER (NOT RL) ----
     if distance < 8:
         stop()
-        back(40, 40)
+        if random.random() < 0.5:
+            turn_left(30, 30)
+        else:
+            turn_right(30, 30)
         time.sleep(0.3)
         stop()
         continue
+
 
     state = get_state(distance)
     action = choose_action(state)
@@ -207,3 +209,4 @@ while True:
     step_count += 1
     if step_count % 20 == 0:
         print(f"State:{state} Action:{action} Reward:{reward} Epsilon:{epsilon:.2f}")
+
